@@ -1,0 +1,9 @@
+> Rainfall <-c(20,34,55,46,34,52,32,34,56,87,76,23)
+> Rainfall
+ [1] 20 34 55 46 34 52 32 34 56 87 76 23
+> timeseries<-ts(Rainfall,start=c(2018,1),frequency=12)
+> print(timeseries)
+     Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+2018  20  34  55  46  34  52  32  34  56  87  76  23
+> plot(timeseries)
+> 

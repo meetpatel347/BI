@@ -1,0 +1,19 @@
+first create rainfall.txt file in note pad
+
+> x<-read.table("rainfall.txt",header=TRUE)
+> x
+  rainfall year
+1       90 1998
+2       86 1999
+3       75 2000
+4       43 2001
+5       82 2002
+6       34 2003
+7       67 2004
+8       67 2005
+> dataset.timeseries<-ts(x$rainfall,start=1998,end=2005)
+> plot(data.timeseries)
+Error in plot(data.timeseries) : object 'data.timeseries' not found
+> plot(dataset.timeseries)
+> plot(rainfall~year,data=x)
+> 
